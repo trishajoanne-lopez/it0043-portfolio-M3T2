@@ -177,3 +177,32 @@ input:focus, select:focus {
   outline: 3px solid var(--color-beige);
   outline-offset: 2px;
 }
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Logo stays top-left */
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .logo {
+    font-size: 18px; /* Slightly bigger font to make the logo pop */
+    font-weight: 800; /* Extra bold for visual hierarchy */
+    letter-spacing: 0.8px;
+  }
+
+  .nav-links {
+    flex-direction: row; /* Horizontal row under the logo */
+    justify-content: flex-start;
+    width: 100%;
+    gap: 6px; /* Tightened gap so all 4 fit on one line */
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 12px; /* Compact font size so links fit across mobile screens */
+    padding: 2px 4px;
+    white-space: nowrap; /* Keeps multi-word links on a single line */
+  }
+}
