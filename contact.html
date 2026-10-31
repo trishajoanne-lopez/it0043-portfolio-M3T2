@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <header>
+    <nav class="navbar">
+      <div class="logo">LOCK IN [STUDY CAFÉ]</div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="menu.html">OUR MENU</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="card">
+      <h1>RESERVE YOUR STUDY SPACE NOW!</h1>
+      <p>Fill out the form below to book your private cubicle or open table session.</p>
+      
+      <!-- Form structure from module slides -->
+      <form style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+        <label for="space-type">Select Space Type:</label>
+        <select id="space-type" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+          <option>Private Study Cubicle</option>
+          <option>Open Table Workspace</option>
+          <option>Meeting Room</option>
+        </select>
+
+        <button type="submit" class="btn" style="margin-top: 10px;">Submit Reservation</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lock In Study Café. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
