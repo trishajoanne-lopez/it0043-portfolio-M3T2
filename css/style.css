@@ -59,3 +59,45 @@ header, footer {
   padding: var(--space-md) 0;
 }
 
+header, footer {
+  background-color: var(--color-surface-dark);
+  border-bottom: 1px solid var(--color-border);
+}
+
+footer {
+  border-top: 1px solid var(--color-border);
+  border-bottom: none;
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-md);
+}
+
+th, td {
+  padding: var(--space-sm);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+th {
+  border-bottom: 2px solid var(--color-border);
+  color: var(--color-beige);
+}
+
+input, select {
+  padding: var(--space-sm);
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  font-family: inherit;
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--color-beige);
+}
