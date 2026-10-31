@@ -1,0 +1,238 @@
+
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f1e9;
+    color: #292720;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+header {
+    background-color: #292720;
+    color: #ffffff;
+    padding: 0 8%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #e5c99b;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e5c99b;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    flex: 1;
+}
+
+.card {
+    background-color: #fffdf8;
+    padding: 45px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(41, 39, 32, 0.07);
+    border: 1px solid #e8e0d3;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #e9ddc9,
+        #f8f2e7,
+        #e5d5bd
+    );
+    padding: 70px 50px;
+}
+
+.hero h1 {
+    max-width: 850px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    color: #292720;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.1rem;
+    color: #5c564b;
+    line-height: 1.9;
+}
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.card h2 {
+    font-size: 1.8rem;
+    color: #68513a;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #625d53;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #292720;
+    color: #d9d1c4;
+    text-align: center;
+    padding: 22px 15px;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.05rem;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .nav-links {
+        gap: 10px 18px;
+    }
+
+    .nav-links a {
+        font-size: 0.78rem;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .card {
+        padding: 28px 22px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+
+    .hero {
+        min-height: 300px;
+        padding: 45px 22px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .card h2 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
