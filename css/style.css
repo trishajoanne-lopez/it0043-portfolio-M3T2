@@ -44,3 +44,18 @@ h1, h2, h3 {
 h1 { font-size: var(--font-size-hero); }
 h2 { font-size: var(--font-size-heading); }
 p { margin-bottom: var(--space-md); }
+
+main {
+  max-width: 900px;
+  margin: var(--space-lg) auto;
+  padding: 0 var(--space-md);
+}
+
+section {
+  margin-bottom: var(--space-lg);
+}
+
+header, footer {
+  padding: var(--space-md) 0;
+}
+
